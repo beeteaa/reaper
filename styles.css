@@ -18,12 +18,12 @@
 .todo-app{
     width: 100%;
     max-width: 540px;
-    background: #fff;
+    background: #3a3c4d;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
-/* to do header plus icon */
+/* to do app header plus icon */
 .todo-app h1{
     color: #eeeeeb;
     display: flex;
@@ -31,12 +31,13 @@
     margin-bottom: 20px;
 
 }
+/* todo icon (bee) */
 .todo-app h1 img{
     width: 50px;
     margin-left: 10px;
 }
 
-/* typing and adding tasks, the box NOT input */
+/* Input row, where users input and add tasks */
 .row{
     display: flex;
     align-items: center;
@@ -48,7 +49,7 @@
 
 }
 
-/* user input space */
+/* user input field within row */
 input{
     flex: 1;
     border: none;
@@ -57,6 +58,7 @@ input{
     padding: 10px;
     font-weight: 14px;
 }
+/* button to add tasks */
 button{
     border: none;
     outline: none;
@@ -67,6 +69,7 @@ button{
     cursor: pointer;
     border-radius: 40px;
 }
+/* styles individual todo items */
 ul li{
     list-style: none;
     font-size: 17px;
@@ -75,17 +78,17 @@ ul li{
     cursor: pointer;
     position: relative;
 }
-
+/* circle icon before each todo task */
 ul li::before{
     content: '';
     position: absolute;
-    height: 28px;
-    width: 28px;
+    height: 22px;
+    width: 22px;
     border-radius: 50%;
-    border-image: url(images/unchecked.png);
+    background-image: url(images/honey.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
+    top: 13.5px;
     left: 8px;
 }
 
